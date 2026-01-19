@@ -1,0 +1,145 @@
+.inter {
+  font-family: "Inter", sans-serif;
+}
+/* shared class */
+.display-flex{
+    display: ;
+} 
+.titles{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.btn{
+    border-radius: 10000px;
+    padding: 14px 16px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+/* navbar design */
+.navbar{
+    background-color: #1A0B2E;
+    margin: 0 auto;
+    padding: 30px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-menu li{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+
+
+/* banner section */
+#banner{
+    margin: 0;
+}
+.banner{
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.banner-container{
+    margin: 101px auto;
+    max-width: 660px;
+}
+.banner-circle{
+    background-image: url(../images/hero-circle.png);
+    background-repeat: no-repeat;
+    max-width: 420px;
+    width: 100%;
+    max-height: 420px;
+    height: 100%;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid #191245;
+    border-radius: 200px; 
+}
+.banner-microphone{
+    margin: 82px auto 97px;
+    position: relative;
+}
+.banner-microphone .microphone {
+    margin: 0 auto;
+}
+.banner-btn{
+    background-color: #00FF88;
+    border-radius: 10000px;
+    padding: 9.6px 19.2px;
+    font-size: 1.13rem;
+    font-weight: 600;
+    position: absolute;
+    right: 50px;
+    top: -70px;
+}
+.banner-description-container{
+    text-align: center;
+}
+.banner-title{
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.banner-description{
+    color: white;
+    margin-bottom: 28.8px;
+}
+
+.buttons{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 427px;
+    margin: 0 auto;
+}
+.spotify{
+    display: flex;
+    width: 100%;
+    font-weight: 600;
+    gap: 8px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe{
+    color: #00FF88;
+    font-weight: 600;
+    border: 1px solid #00FF88;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* responsive layout */
+@media screen and (max-width:576px) {
+    .nav-container .nav-menu, .btn{
+        display: none;
+    }
+}

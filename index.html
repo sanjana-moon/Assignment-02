@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <title>Assignment-02 - TechWave</title>
 </head>
-<body>
+<body class="inter">
     <header>
-
+        <nav class="navbar">
+            <div class="nav-container">
+                <h2 class="titles">Tech<span class="bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
+                <ul class="nav-menu flex gap-[32px] text-white">
+                    <li>About</li>
+                    <li>Episodes</li>
+                    <li>Host</li>
+                </ul>
+                <button class="btn bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </nav>
+        <section id="banner">
+            <div class="banner">
+                <div class="banner-container">
+                    <div class="banner-circle">
+                        <div class="banner-microphone">
+                            <img class="microphone" src="./images/microphone.png" alt="">
+                            <button class="banner-btn">NEW</button>
+                        </div>
+                    </div>
+                    <div class="banner-description-container">
+                        <h2 class="titles banner-title">TechWave</h2>
+                        <p class="banner-description">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="buttons">
+                            <button class="btn spotify bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]" ><img src="./images/spotify.png" alt=""> Listen On Spotify</button>
+                            <button class="btn subscribe"><img class="w-5 h-4" src="./images/message.png" alt="">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
