@@ -90,6 +90,7 @@
     position: absolute;
     right: 55px;
     top: 20px;
+    animation-duration: 2.2s;
 }
 .banner-description-container{
     text-align: center;
@@ -102,7 +103,7 @@
 
 .buttons{
     display: flex;
-    gap: 8px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -118,6 +119,19 @@
     justify-content: center;
     align-items: center;
 }
+.spotify{
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 #F7E93F;
+  }
+  50% {
+    box-shadow: 0 0 15px #F7E93F;
+  }
+}
+
 .subscribe{
     color: #00FF88;
     font-weight: 600;
@@ -129,6 +143,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.subscribe {
+  animation: pulsebtn 2s infinite;
+}
+
+@keyframes pulsebtn {
+  0%, 100% {
+    box-shadow: 0 0 0 #00FF88;
+  }
+  50% {
+    box-shadow: 0 0 20px #00FF88;
+  }
+}
+
+
+
+
 /* main section */
         /* about section */
 .about {
