@@ -236,16 +236,23 @@
 }
 .feature-cards{
     display: grid;
-    grid-template-columns: repeat(3,380px);
-    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
     gap: 36px;
 }
 .feature-item{
     background-color: #250D44;
     border-radius: 24px;
 }
+.feature-item iframe{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 456px;
+    height: 256px;
+    width: 100%;
+}
 .about-card{
-    margin: 24px;
+    margin: 29px;
 }
 .about-card h3{
     font-size: 1.5rem;
@@ -263,6 +270,7 @@
     margin: 0;
     padding: 0;
     background-color: #1A0B2E;
+    padding-bottom: 120px;
 }
 .host-container{
     max-width: 1440px;
@@ -312,6 +320,62 @@
     width: 20px;
     height: 20px;
 }
+
+
+/* Footer section */
+.footer{
+    margin: 0;
+    padding: 144px;
+    background-image: url(../images/footer-bg.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer-container{
+    max-width: 1632px;
+    width: 100%;;
+}
+.footer-title{
+    margin-bottom: 32px;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    max-width: 660px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.footer-item img{
+    max-width: 24px;
+    width: 100%;
+    max-height: 24px;
+    height: 100%;
+}
+.footer-item p{
+    font-weight: 500;
+    color: white;
+    opacity: 0.6;
+    line-height: 19px;
+}
+.footer-coment{
+    color: white;
+    opacity: 0.6;
+    line-height: 24px;
+    text-align: center;
+}
+
 
 
 
@@ -385,6 +449,9 @@
         padding: 0;
         padding-top: 20px;
     }
+    .feature-container{
+        padding: 20px;
+    }
     .feature-title{
         margin-bottom: 20px;
     }
@@ -396,7 +463,7 @@
         padding-bottom: 40px;
     }
     .host-title{
-        padding-top: 60px;
+        padding-top: 30px;
         margin-bottom: 24px;
     }
     .host-card{
@@ -416,6 +483,23 @@
         align-items: center;
     }
     .card-description{
+        text-align: center;
+    }
+
+
+    .footer{
+        padding: 0;
+    }
+    .footer-container{
+        padding: 40px 20px;
+    }
+    .footer-title{
+        margin-bottom: 24px;
+    }
+    .footer-menu{
+        gap: 16px;
+        grid-template-columns: repeat(2,160px);
+        justify-content: center;
         text-align: center;
     }
 }
